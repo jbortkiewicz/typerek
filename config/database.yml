@@ -18,4 +18,4 @@ production:
   adapter: postgresql
   encoding: unicode
   url: <%= ENV['DATABASE_URL'] %>
-  pool: <%= ENV['THREADS_COUNT'].to_i %>
+  pool: 5
