@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby '2.6.7'
@@ -22,9 +24,13 @@ gem 'uglifier', '>= 1.0.3'
 
 group :development do
   gem 'brakeman', require: false
-  gem 'rubocop'
 end
 
 group :development, :test do
+  gem 'capybara'
+  gem 'factory_bot_rails'
+  gem 'faker'
   gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'rubocop-rails', require: false
 end
